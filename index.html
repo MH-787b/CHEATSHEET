@@ -14,18 +14,24 @@
   <nav>
     <div class="nav-inner">
       <span class="logo">𝘾𝙃𝙀𝘼𝙏 𝙎𝙃𝙀𝙀𝙏</span>
-      <a href="https://maxwhulme.gumroad.com/l/umpzf" class="nav-cta">get it now</a>
+      <div class="nav-links">
+        <a href="#pricing" class="nav-link">pricing</a>
+        <a href="https://maxwhulme.gumroad.com/l/umpzf" class="nav-cta" target="_blank">go premium</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
     <canvas id="hero-canvas"></canvas>
-    <div class="hero-badge">chrome extension</div>
+    <div class="hero-badge">free chrome extension</div>
     <h1>stop failing.<br><span class="accent">start cheating smarter.</span></h1>
     <p class="hero-sub">AI-powered homework solver that lives in your browser. Get instant answers with full working — physics, maths, chemistry, whatever. Just press <kbd>Alt+L</kbd>.</p>
-    <a href="https://maxwhulme.gumroad.com/l/umpzf" class="btn-primary">get cheat sheet premium — &pound;4.99/mo</a>
-    <p class="hero-note">cancel anytime &middot; works on any website</p>
+    <div class="hero-ctas">
+      <a href="#install" class="btn-primary">download free</a>
+      <a href="https://maxwhulme.gumroad.com/l/umpzf" class="btn-secondary" target="_blank">go premium &rarr;</a>
+    </div>
+    <p class="hero-note">free forever &middot; no account needed &middot; upgrade anytime</p>
   </section>
 
   <!-- Demo -->
@@ -68,6 +74,43 @@
     </div>
   </section>
 
+  <!-- Install -->
+  <section class="install" id="install">
+    <h2>install in 30 seconds</h2>
+    <div class="install-steps">
+      <div class="install-step">
+        <span class="step-num">01</span>
+        <div>
+          <h3>download the extension</h3>
+          <a href="https://github.com/MH-787b/CHEATSHEET/raw/main/learning-mode-extension.zip" class="btn-download" download>
+            download .zip
+          </a>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="step-num">02</span>
+        <div>
+          <h3>open chrome extensions</h3>
+          <p>Go to <kbd>chrome://extensions</kbd> and enable <strong>Developer mode</strong> (top right toggle).</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="step-num">03</span>
+        <div>
+          <h3>load the extension</h3>
+          <p>Click <strong>Load unpacked</strong>, then select the unzipped folder.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="step-num">04</span>
+        <div>
+          <h3>press Alt+L on any page</h3>
+          <p>Open your homework, press <kbd>Alt+L</kbd>. Done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Features -->
   <section class="features">
     <div class="features-grid">
@@ -79,44 +122,17 @@
       <div class="feature-card">
         <div class="feature-icon">{}</div>
         <h3>full working</h3>
-        <p>Toggle "with working" mode for step-by-step solutions you can actually learn from. Or paste into assignments.</p>
+        <p>Toggle "with working" mode for step-by-step solutions you can actually learn from.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">&gt;</div>
         <h3>ai-powered</h3>
-        <p>Uses Claude AI for hard questions and fast models for simple ones. Way more accurate than ChatGPT.</p>
+        <p>Uses Claude AI for hard questions. Way more accurate than asking ChatGPT.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">*</div>
         <h3>works everywhere</h3>
-        <p>Isaac Physics, MyMaths, Sparx, textbook PDFs — if it's in your browser, cheat sheet can read it.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section class="how">
-    <h2>how it works</h2>
-    <div class="steps">
-      <div class="step">
-        <span class="step-num">01</span>
-        <h3>install the extension</h3>
-        <p>Subscribe below, then <a href="https://maxwhulme.gumroad.com/l/umpzf" style="color:#d4a017">get the extension here</a>. Takes 10 seconds.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">02</span>
-        <h3>open your homework</h3>
-        <p>Navigate to any homework or question page in your browser.</p>
-      </div>
-      <div class="step">
-        <span class="step-num">03</span>
-        <h3>press Alt+L</h3>
-        <p>The panel slides out with answers. Choose "just answers" or "with working".</p>
-      </div>
-      <div class="step">
-        <span class="step-num">04</span>
-        <h3>pass your homework</h3>
-        <p>That's it. You're welcome.</p>
+        <p>Isaac Physics, MyMaths, Sparx, textbook PDFs — if it's in your browser, cheat sheet reads it.</p>
       </div>
     </div>
   </section>
@@ -124,18 +140,35 @@
   <!-- Pricing -->
   <section class="pricing" id="pricing">
     <h2>pricing</h2>
-    <div class="price-card">
-      <div class="price-label">𝘾𝙃𝙀𝘼𝙏 𝙎𝙃𝙀𝙀𝙏 PRO</div>
-      <div class="price-amount">&pound;4.99<span class="price-period">/month</span></div>
-      <ul class="price-features">
-        <li>unlimited questions</li>
-        <li>instant answers + full working</li>
-        <li>claude ai for hard questions</li>
-        <li>works on any website</li>
-        <li>cancel anytime</li>
-      </ul>
-      <a href="https://maxwhulme.gumroad.com/l/umpzf" class="btn-primary btn-full">subscribe now</a>
-      <p class="price-note">secure payment via Gumroad &middot; cancel anytime</p>
+    <div class="pricing-grid">
+
+      <div class="price-card">
+        <div class="price-label">FREE</div>
+        <div class="price-amount">£0<span class="price-period">/month</span></div>
+        <ul class="price-features">
+          <li>5 questions per day</li>
+          <li>instant answers</li>
+          <li>works on any website</li>
+          <li>no account needed</li>
+        </ul>
+        <a href="https://github.com/MH-787b/CHEATSHEET/raw/main/learning-mode-extension.zip" class="btn-outline btn-full" download>download free</a>
+      </div>
+
+      <div class="price-card price-card-featured">
+        <div class="price-badge">most popular</div>
+        <div class="price-label">PREMIUM</div>
+        <div class="price-amount">&pound;4.99<span class="price-period">/month</span></div>
+        <ul class="price-features">
+          <li>unlimited questions</li>
+          <li>instant answers + full working</li>
+          <li>claude ai for hard questions</li>
+          <li>works on any website</li>
+          <li>cancel anytime</li>
+        </ul>
+        <a href="https://maxwhulme.gumroad.com/l/umpzf" class="btn-primary btn-full" target="_blank">subscribe now</a>
+        <p class="price-note">secure payment via Gumroad</p>
+      </div>
+
     </div>
   </section>
 
@@ -152,11 +185,15 @@
     </div>
     <div class="faq-item">
       <h3>is it always right?</h3>
-      <p>It uses Claude AI (one of the smartest models out there) for hard questions. It's very accurate but not 100% — always sanity-check important answers.</p>
+      <p>It uses Claude AI for hard questions. Very accurate but not 100% — always sanity-check important answers.</p>
+    </div>
+    <div class="faq-item">
+      <h3>what's the difference between free and premium?</h3>
+      <p>Free gives you 5 questions a day. Premium is unlimited, uses Claude AI for harder questions, and includes full step-by-step working.</p>
     </div>
     <div class="faq-item">
       <h3>can I cancel anytime?</h3>
-      <p>Yes. Cancel in one click from your Stripe dashboard. No questions asked.</p>
+      <p>Yes. Cancel in one click from your Gumroad dashboard. No questions asked.</p>
     </div>
   </section>
 
