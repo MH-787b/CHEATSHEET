@@ -778,6 +778,72 @@ kbd {
   letter-spacing: 0.02em;
 }
 
+/* ─── Privacy page ─────────────────────────────────────────────────────── */
+.privacy-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 140px 24px 80px;
+}
+
+.privacy-page h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.privacy-updated {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.privacy-section {
+  margin-bottom: 32px;
+}
+
+.privacy-section h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: #d4a017;
+  margin-bottom: 10px;
+}
+
+.privacy-section p {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.privacy-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.privacy-section li {
+  font-size: 14px;
+  color: #999;
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.privacy-section li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #333;
+}
+
+.privacy-section a {
+  color: #d4a017;
+  text-decoration: underline;
+}
+
 /* ─── Install ───────────────────────────────────────────────────────────── */
 .install {
   max-width: 700px;
@@ -956,6 +1022,20 @@ footer {
   font-size: 12px;
   color: #444;
   letter-spacing: 0.02em;
+}
+
+.footer-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #d4a017;
 }
 
 /* ─── Responsive ────────────────────────────────────────────────────────── */
