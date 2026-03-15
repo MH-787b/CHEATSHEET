@@ -48,7 +48,7 @@
       // Draw dot
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(212, 160, 23, 0.25)";
+      ctx.fillStyle = "rgba(212, 160, 23, 0.4)";
       ctx.fill();
     }
 
@@ -59,12 +59,12 @@
         var dy = particles[i].y - particles[j].y;
         var dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < connectDist) {
-          var alpha = (1 - dist / connectDist) * 0.08;
+          var alpha = (1 - dist / connectDist) * 0.22;
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
           ctx.strokeStyle = "rgba(212, 160, 23, " + alpha + ")";
-          ctx.lineWidth = 0.5;
+          ctx.lineWidth = 0.8;
           ctx.stroke();
         }
       }
