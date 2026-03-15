@@ -513,6 +513,13 @@ kbd {
   padding: 40px 24px 60px;
 }
 
+.robot-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
 .robot {
   position: relative;
   display: flex;
@@ -622,21 +629,49 @@ kbd {
 
 .robot-screen {
   width: 42px;
-  height: 16px;
+  height: 10px;
   background: #0a0a0a;
   border: 1px solid #222;
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 
-.robot-text {
+/* Thought bubble */
+.thought-bubble {
+  position: absolute;
+  left: calc(100% + 16px);
+  top: 4px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 6px 14px;
+  white-space: nowrap;
+}
+
+.thought-text {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
+  font-size: 12px;
   color: #d4a017;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+}
+
+.thought-dot {
+  position: absolute;
+  background: #2a2a2a;
+  border-radius: 50%;
+}
+
+.thought-dot-1 {
+  width: 8px;
+  height: 8px;
+  left: -12px;
+  bottom: 4px;
+}
+
+.thought-dot-2 {
+  width: 5px;
+  height: 5px;
+  left: -6px;
+  bottom: -2px;
 }
 
 .robot-feet {
