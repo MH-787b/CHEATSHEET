@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download — CHEAT SHEET</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">CHEAT SHEET</a>
+      <div class="nav-links">
+        <a href="index.html#pricing" class="nav-link">pricing</a>
+        <a href="https://maxwhulme.gumroad.com/l/umpzf" class="nav-cta" target="_blank">go premium</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="download-hero">
+    <div class="download-check" id="download-check">&#10003;</div>
+    <h1>your download is starting...</h1>
+    <p class="download-sub">if it doesn't start automatically, <a href="https://github.com/MH-787b/CHEATSHEET/raw/main/learning-mode-extension.zip" id="manual-link" download>click here</a></p>
+  </section>
+
+  <section class="download-steps">
+    <h2>how to install</h2>
+
+    <div class="install-steps">
+      <div class="install-step">
+        <span class="step-num">01</span>
+        <div>
+          <h3>unzip the file</h3>
+          <p>Find the downloaded <kbd>learning-mode-extension.zip</kbd> and extract it to a folder.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="step-num">02</span>
+        <div>
+          <h3>open chrome extensions</h3>
+          <p>Go to <kbd>chrome://extensions</kbd> in your browser and enable <strong>Developer mode</strong> (top right toggle).</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="step-num">03</span>
+        <div>
+          <h3>load the extension</h3>
+          <p>Click <strong>Load unpacked</strong>, then select the unzipped folder.</p>
+        </div>
+      </div>
+      <div class="install-step">
+        <span class="step-num">04</span>
+        <div>
+          <h3>you're in</h3>
+          <p>Open any homework page and press <kbd>Alt+L</kbd>. That's it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="download-bottom">
+      <p class="download-note">want unlimited questions + claude ai for hard problems?</p>
+      <a href="https://maxwhulme.gumroad.com/l/umpzf" class="btn-primary" target="_blank">go premium — £4.99/month</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="index.html" class="logo">CHEAT SHEET</a>
+      <p class="footer-text">ur gonna pass dw</p>
+    </div>
+  </footer>
+
+  <script>
+    // Auto-trigger download
+    window.addEventListener("DOMContentLoaded", function() {
+      var link = document.createElement("a");
+      link.href = "https://github.com/MH-787b/CHEATSHEET/raw/main/learning-mode-extension.zip";
+      link.download = "learning-mode-extension.zip";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html>
