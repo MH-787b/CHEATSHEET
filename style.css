@@ -638,7 +638,7 @@ kbd {
 /* Thought bubble */
 .thought-bubble {
   position: absolute;
-  left: calc(100% + 16px);
+  right: calc(100% + 16px);
   top: 4px;
   background: #1a1a1a;
   border: 1px solid #2a2a2a;
@@ -663,14 +663,14 @@ kbd {
 .thought-dot-1 {
   width: 8px;
   height: 8px;
-  left: -12px;
+  right: -12px;
   bottom: 4px;
 }
 
 .thought-dot-2 {
   width: 5px;
   height: 5px;
-  left: -6px;
+  right: -6px;
   bottom: -2px;
 }
 

@@ -116,17 +116,7 @@
 (function() {
   var leftPupil = document.getElementById("pupil-left");
   var rightPupil = document.getElementById("pupil-right");
-  var statusEl = document.getElementById("robot-status");
   if (!leftPupil || !rightPupil) return;
-
-  var messages = ["hi :)", "alt+l", "do it", "ez W", "lol", "bruh", ":3", "slay"];
-  var msgIndex = 0;
-
-  // Cycle through status messages
-  setInterval(function() {
-    msgIndex = (msgIndex + 1) % messages.length;
-    if (statusEl) statusEl.textContent = messages[msgIndex];
-  }, 3000);
 
   // Track mouse with eyes
   document.addEventListener("mousemove", function(e) {
