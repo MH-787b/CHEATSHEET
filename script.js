@@ -112,6 +112,43 @@
   setTimeout(type, 1500);
 })();
 
+// ─── Robot eye tracking ──────────────────────────────────────────────────
+(function() {
+  var leftPupil = document.getElementById("pupil-left");
+  var rightPupil = document.getElementById("pupil-right");
+  var statusEl = document.getElementById("robot-status");
+  if (!leftPupil || !rightPupil) return;
+
+  var messages = ["hi :)", "alt+l", "do it", "ez W", "lol", "bruh", ":3", "slay"];
+  var msgIndex = 0;
+
+  // Cycle through status messages
+  setInterval(function() {
+    msgIndex = (msgIndex + 1) % messages.length;
+    if (statusEl) statusEl.textContent = messages[msgIndex];
+  }, 3000);
+
+  // Track mouse with eyes
+  document.addEventListener("mousemove", function(e) {
+    var eyes = [leftPupil, rightPupil];
+    for (var i = 0; i < eyes.length; i++) {
+      var eye = eyes[i].parentElement;
+      var rect = eye.getBoundingClientRect();
+      var eyeCx = rect.left + rect.width / 2;
+      var eyeCy = rect.top + rect.height / 2;
+      var dx = e.clientX - eyeCx;
+      var dy = e.clientY - eyeCy;
+      var angle = Math.atan2(dy, dx);
+      var dist = Math.min(Math.sqrt(dx * dx + dy * dy), 200);
+      var maxMove = 4;
+      var move = (dist / 200) * maxMove;
+      var tx = Math.cos(angle) * move;
+      var ty = Math.sin(angle) * move;
+      eyes[i].style.transform = "translate(" + tx + "px, " + ty + "px)";
+    }
+  });
+})();
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
   link.addEventListener("click", function(e) {
