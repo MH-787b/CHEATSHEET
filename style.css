@@ -558,12 +558,18 @@ kbd {
   border: 1px solid #2a2a2a;
   border-radius: 12px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  gap: 16px;
-  padding: 12px 12px 6px;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
   position: relative;
+}
+
+.robot-eyes {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .robot-eye {
@@ -592,7 +598,6 @@ kbd {
   height: 3px;
   background: #333;
   border-radius: 2px;
-  margin-top: -6px;
   transition: all 0.3s ease;
 }
 
